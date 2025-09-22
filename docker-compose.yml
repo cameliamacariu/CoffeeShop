@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coffeeshop:
+    image: ${DOCKER_REGISTRY-}coffeeshop
+    build:
+      context: .
+      dockerfile: CoffeeShop/Dockerfile
