@@ -25,6 +25,7 @@ namespace CoffeeShop.Controllers
             };
 
             coffeeDbContext.Set<Coffee>().Add(coffee);
+            coffeeDbContext.SaveChanges();
 
             return Ok(coffee);
         }
