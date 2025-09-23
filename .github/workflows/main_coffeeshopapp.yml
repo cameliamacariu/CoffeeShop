@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: coffeeshopacr-eza5dufyd3eff3ey.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f78898fcd866498bb03b91b63b3fc20d }}/nginx:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./CoffeeShop/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
