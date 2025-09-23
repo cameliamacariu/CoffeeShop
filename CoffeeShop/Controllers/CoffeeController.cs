@@ -20,7 +20,6 @@ namespace CoffeeShop.Controllers
         {
             var coffee = new Coffee()
             {
-                Id = id,
                 Name = "Capuccino " + id,
             };
 
